@@ -30,7 +30,7 @@ Usage
 
 ```hcl
 module "ssl_certificate" {
-  source = "sidick/terraform-aws-iam-ssl-certificate/aws"
+  source = "sidick/iam-ssl-certificate/aws"
 
   name_prefix      = "moduletest-"
   private_key      = "${file("ssl_cert_test.key")}"
@@ -42,7 +42,7 @@ module "ssl_certificate" {
 
 ```hcl
 module "ssl_certificate" {
-  source = "sidick/terraform-aws-iam-ssl-certificate/aws"
+  source = "sidick/iam-ssl-certificate/aws"
 
   name_prefix       = "moduletest-"
   private_key       = "${file("ssl_cert_test.key")}"
