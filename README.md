@@ -48,6 +48,27 @@ module "ssl_certificate" {
 }
 ```
 
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|:----:|:-----:|:-----:|
+| certificate\_body | The contents of the public key certificate in PEM-encoded format | string | n/a | yes |
+| certificate\_chain | The contents of the certificate chain. This is typically a concatenation of the PEM-encoded public key certificates of the chain | string | `""` | no |
+| name\_prefix | Prefix of the Certificate name | string | n/a | yes |
+| path | The IAM path for the server certificate | string | `"/"` | no |
+| private\_key | The contents of the private key in PEM-encoded format | string | n/a | yes |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| arn | The ARN of the certificate |
+| id | The ID of the certificate |
+| name | The name of the certificate |
+
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ### Authors
 
 Module managed by [Simon Dick](https://github.com/sidick).
